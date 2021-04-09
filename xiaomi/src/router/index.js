@@ -3,15 +3,18 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-export const views=[
-    {
+export const views = [
+  {
+    path: '/',
+    //component: () => import('@/views/index/index')
+  }
 
-    }
 ]
 
-
-const router=()=>new Router({
-views
+const createRouter = () => new Router({
+  routes: views
 })
+
+const router = createRouter()
 
 export default router

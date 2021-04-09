@@ -1,7 +1,7 @@
 <template>
-  <el-link :href="cell.href">
-    <naviitem :title="123" />
-  </el-link>
+  <el-menu-item>
+    <naviitem :title="cell.title" />
+  </el-menu-item>
 </template>
 
 <script>
@@ -17,5 +17,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 </style>
